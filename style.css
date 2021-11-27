@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --con-bg-color: linear-gradient(to right, rgba(195,219,204,1), rgba(178,211,190,0.8), rgba(178,211,190,0.8), rgba(178,211,190,1));
+    --bod-bg-color: linear-gradient(45deg,rgb(12, 110, 110),rgb(39, 243, 243),rgba(56,122,122,1),rgb(134, 206, 206)); 
+    --tit-color: rgb(142, 231, 212);
+    --tit-shadow: rgba(58,243,243,1); 
+    --par-text: rgba(221,241,241,1); 
+    --lab-text: rgb(167, 241, 217);
+    --btn-color: rgb(57, 151, 143);
+    --btn-color-hover: rgba(125,241,216,1);
+    --inp-color-text: rgba(72,72,153,0.8);
+    --inp-color-hover: rgba(70,182,144,0.98);
+    --inp-color-active: rgba(235,247,243,1);
+    --inp-color-disable: linear-gradient(90deg, rgba(210, 245, 245, 0.5), rgba(236,250,250,0.2));
+}
+
+@keyframes backanime {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+body {
+  width: 350px;
+  height: 600px;
+  margin-top: 50px;
+  padding: 10px;
+  background: var(--bod-bg-color);
+  background-size: 300% 300%;
+  animation: backanime 15s ease infinite;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  color: var(--inp-color-text);
+  background-color: var(--inp-color-active); 
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: var(--tit-color);
+  text-shadow: 2px 2px 5px var(--tit-shadow); 
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+p {
+  color: var(--lab-text);
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+input[type=text] {
+  text-transform: capitalize;
+}
+
+input[type=email], textarea {
+  text-transform: lowercase;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+label {
+  padding: 3px 0px;
+  display: inline-block;
+  font-size: 16px;
+  color: var(--lab-text);
+}    
+
+input[type=submit] {
+  background-color: var(--btn-color);
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-block: 8px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+input[type=submit]:hover {
+  background-color: var(--btn-color-hover);
+  color: var(--btn-color-text);
+}
+
+.container {
+  width: auto;
+  height: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 6px;
+  border-width: medium;
+  border: 5px inset rgb(113, 199, 186);
+  padding: 10px;
+  display: block;
+  
+  background-size: 200% 200%;
+  animation: backanime 15s ease infinite;
+}
+
+.dlabel {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.dtext {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.dmain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout screen 600px */
+@media screen and (max-width: 600px) {
+  .container, .dmain, .dlabel {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Responsive layout screen 600-992px */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .container, .dmain, .dlabel {
+    width: 120%;
+    margin-top: 0;
+    }
+  }
+
+/* Responsive layout screen 992-1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 140%;
+    margin-top: 0;
+  }
+}
+ 
+/* Responsive layout screen 1200px or more */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 150%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+ 
+
