@@ -2,12 +2,12 @@
 
 :root {
     --con-bg-color: linear-gradient(to right, rgba(195,219,204,1), rgba(178,211,190,0.8), rgba(178,211,190,0.8), rgba(178,211,190,1));
-    --bod-bg-color: linear-gradient(45deg,rgb(12, 110, 110),rgb(39, 243, 243),rgba(56,122,122,1),rgb(134, 206, 206)); 
+    --bod-bg-color: linear-gradient(45deg,rgb(181, 245, 245),rgba(120,209,209,1),rgba(56,122,122,1),rgb(134, 206, 206)); 
     --tit-color: rgb(142, 231, 212);
     --tit-shadow: rgba(58,243,243,1); 
     --par-text: rgba(221,241,241,1); 
-    --lab-text: rgb(167, 241, 217);
-    --btn-color: rgb(57, 151, 143);
+    --lab-text: rgb(88, 231, 184);
+    --btn-color: rgb(10, 143, 132);
     --btn-color-hover: rgba(125,241,216,1);
     --inp-color-text: rgba(72,72,153,0.8);
     --inp-color-hover: rgba(70,182,144,0.98);
@@ -38,10 +38,9 @@
 body {
   width: 350px;
   height: 600px;
-  margin-top: 50px;
   padding: 10px;
   background: var(--bod-bg-color);
-  background-size: 300% 300%;
+  background-size: 200% 200%;
   animation: backanime 15s ease infinite;
 }
 
@@ -119,7 +118,7 @@ input[type=submit]:hover {
   margin-right: 25%;
   border-radius: 6px;
   border-width: medium;
-  border: 5px inset rgb(113, 199, 186);
+  border: 5px inset rgb(129,201,190);
   padding: 10px;
   display: block;
   
